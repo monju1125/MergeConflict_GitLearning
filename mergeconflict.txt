@@ -1,0 +1,36 @@
+Merge Conflict
+
+Merge conflicts occur during the merging process when Git is unable to automatically 
+resolve differences between source code in two commits. This situation typically arises 
+when multiple developers work on separate branches and attempt to merge their changes 
+into a common branch, leading to conflicting edits that require manual resolution.
+
+Definition of Merge Conflict: A merge conflict is an event that takes place 
+when Git cannot automatically resolve differences in the source code between two commits,
+ often due to concurrent changes made by different developers.
+
+Merging Process: Developers work on isolated branches and later merge their changes
+into a single branch. Git's merge command combines these branches but may encounter 
+conflicts if changes overlap or diverge. Merge conflicts occur during the merging process 
+when Git is unable to automatically resolve differences between source code in two commits. 
+This situation typically arises when multiple developers work on separate branches and 
+attempt to merge their changes into a common branch, leading to conflicting edits that 
+require manual resolution.
+
+Types of Merge Conflict:
+Git can automatically merge changes only if the commits are on different
+ lines or branches. If at any moment you diverge from the process,
+ different lines of source code may lead to merge conflicts. 
+There are two main types of merge conflicts:
+
+Pending Changes: During the merge process, if there are changes in 
+the working area or directory that are moved to the stage area, 
+the merge will fail due to pending changes. For instance, 
+if you modify changes and plan to commit but decide to merge first,
+ the merge will fail due to pending changes. You must resolve these changes before proceeding with the merge.
+
+Conflict During Merge: If conflicts arise during the merge process, it indicates
+ a conflict between your local branch and the branch being merged.
+ Git attempts to resolve differences in the source code automatically, 
+but if it cannot, manual intervention is required to resolve the conflicts.
+ 
